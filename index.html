@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartholomew Plumbing & Heating Co. | Columbus, OH</title>
+    <meta name="description" content="Local Columbus plumbing & heating experts. Speak directly to the owner. Call (614) 253-8695 for fast heating tune-ups, boiler repairs, and leak fixes.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Pitch/Customer View Control Panel -->
+    <div class="view-toggle-bar">
+        <div class="toggle-container">
+            <span class="toggle-label font-outfit">Active View Mode:</span>
+            <div class="toggle-buttons">
+                <button id="btn-customer-view" class="view-btn active" onclick="switchView('customer')">
+                    <i class="fa-solid fa-user"></i> Customer View
+                </button>
+                <button id="btn-pitch-view" class="view-btn" onclick="switchView('pitch')">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Pitch View (Sales Guide)
+                </button>
+            </div>
+        </div>
+        <div class="pitch-banner" id="pitch-banner">
+            <p><strong>💡 Pitch View Enabled:</strong> Hover or tap on the purple-bordered elements to see the high-converting copywriting formulas and psychological triggers driving this page!</p>
+        </div>
+    </div>
+
+    <!-- Main Header / Top Contact -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-accent"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Bartholomew</span>
+                    <span class="brand-sub">Plumbing & Heating Co.</span>
+                </div>
+            </div>
+            
+            <div class="header-trust-badges desktop-only">
+                <div class="badge">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Est. Columbus Local</span>
+                </div>
+                <div class="badge">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Direct Owner Line</span>
+                </div>
+            </div>
+
+            <div class="cta-phone pitch-target" data-pitch="Lowers friction immediately: phone numbers are tap-to-call, positioned perfectly for thumb access.">
+                <a href="tel:6142538695" class="phone-link">
+                    <span class="phone-icon"><i class="fa-solid fa-phone-volume"></i></span>
+                    <div class="phone-details">
+                        <span class="phone-label">Direct Line to Owner</span>
+                        <span class="phone-number">(614) 253-8695</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-tag pitch-target" data-pitch="Social Proof Booster: Positions Bartholomew as a trusted neighborhood fixture rather than a nameless franchise.">
+                    <i class="fa-solid fa-location-dot text-amber"></i> Columbus, OH Owned & Operated
+                </div>
+                
+                <h1 class="hero-title pitch-target" data-pitch="Clear, Value-First Headline: Highlights the direct-to-owner feature, saving customers from call center hoops.">
+                    Tired of Call Centers? Speak <span class="text-gradient">Directly to the Owner</span> for Your Heating & Plumbing Needs.
+                </h1>
+                
+                <p class="hero-subtitle pitch-target" data-pitch="Explicit Trust & Action: Clarifies primary heating specialties (boiler repair, leaks, tune-ups) and local availability.">
+                    Over a decade keeping Columbus warm. Call Bartholomew Plumbing & Heating Co. at <strong>(614) 253-8695</strong> for expert, transparent pricing and zero sales pressure.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn btn-primary pitch-target" data-pitch="Interactive Lead Magnet: Directs users to the cost estimator tool to hook interest before requesting details.">
+                        <i class="fa-solid fa-calculator"></i> Calculate Repair Cost
+                    </a>
+                    <a href="tel:6142538695" class="btn btn-secondary phone-pulse pitch-target" data-pitch="Immediate Call to Action: Bold color contrast with a pulsing effect to capture urgent repairs.">
+                        <i class="fa-solid fa-phone"></i> Call Now: (614) 253-8695
+                    </a>
+                </div>
+
+                <div class="trust-points">
+                    <div class="tp-item"><i class="fa-solid fa-circle-check"></i> No dispatch fees</div>
+                    <div class="tp-item"><i class="fa-solid fa-circle-check"></i> Owner answers every call</div>
+                    <div class="tp-item"><i class="fa-solid fa-circle-check"></i> Columbus Born & Bred</div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Visual Trust Card -->
+            <div class="hero-card pitch-target" data-pitch="Humanizing the Brand: A dedicated local owner card showing availability and professional credentials dramatically increases conversion rates.">
+                <div class="owner-badge">
+                    <div class="owner-avatar">
+                        <i class="fa-solid fa-user-large"></i>
+                    </div>
+                    <div class="owner-badge-text">
+                        <h4>Owner Communication</h4>
+                        <p>No sales reps. You talk directly with the plumber fixing your home.</p>
+                    </div>
+                </div>
+                <div class="features-summary-list">
+                    <div class="f-summary-item">
+                        <div class="f-icon-wrap"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                        <div>
+                            <h5>Heating Tune-Up Specialists</h5>
+                            <p>Preventative safety checks, efficiency improvements, & full system health audits.</p>
+                        </div>
+                    </div>
+                    <div class="f-summary-item">
+                        <div class="f-icon-wrap"><i class="fa-solid fa-toolbox"></i></div>
+                        <div>
+                            <h5>Boiler & Furnace Repairs</h5>
+                            <p>Fast diagnostic and repair of older radiators, boilers, and heating units.</p>
+                        </div>
+                    </div>
+                    <div class="f-summary-item">
+                        <div class="f-icon-wrap"><i class="fa-solid fa-droplet-slash"></i></div>
+                        <div>
+                            <h5>Leak Diagnostics & Piping</h5>
+                            <p>State-of-the-art leak tracing, pipe replacements, and heat loop restoration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview with Live Value Hook -->
+    <section class="services">
+        <div class="section-header text-center">
+            <h2 class="section-title">Transparent Plumbing & Heating Services</h2>
+            <p class="section-desc">We keep it simple. Honest local workmanship with flat-rate quotes directly from the source.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card pitch-target" data-pitch="Clarity & Reassurance: Establishes a transparent baseline price to lower anxiety around service calls.">
+                <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <h3>Heating Tune-Up</h3>
+                <p>Complete multi-point safety scan, filter replacements, thermostat checks, and heat exchanger inspection before winter hits.</p>
+                <div class="price-estimate">Starting at <span>$129</span></div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card pitch-target" data-pitch="High-intent Service Positioning: Specifically calls out boiler repairs, a common pain point in older Columbus neighborhoods.">
+                <div class="service-icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+                <h3>Boiler Repair</h3>
+                <p>Radiator heating loops, hydronic pump replacements, automatic water feeder repair, and boiler combustion chamber tune-up.</p>
+                <div class="price-estimate">Starting at <span>$250</span></div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card pitch-target" data-pitch="Urgent Pain Relief: Positions the business as a fast-response troubleshooter for active water leaks.">
+                <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
+                <h3>Leak Repair</h3>
+                <p>Pinpoint leak tracking, valve replacement, copper & PEX line updates, and water pressure optimization across your heating system.</p>
+                <div class="price-estimate">Starting at <span>$180</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="calc-container">
+            <div class="calc-info">
+                <div class="section-header">
+                    <span class="sub-header-tag">NO OBLIGATION ESTIMATOR</span>
+                    <h2 class="section-title">Calculate Your Estimated Repair Cost</h2>
+                    <p class="section-desc">Use our interactive calculator below to select your required services. See real-time baseline estimates instantly before you call.</p>
+                </div>
+                
+                <div class="calc-trust-checklist pitch-target" data-pitch="Transparent Pricing is a massive conversion driver. Pre-calculated estimates reduce the fear of being overcharged.">
+                    <div class="chk-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span><strong>No surprise fees:</strong> What we quote is what you pay.</span>
+                    </div>
+                    <div class="chk-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span><strong>Owner Inspection:</strong> The owner verifies every diagnosis.</span>
+                    </div>
+                    <div class="chk-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span><strong>Local Priority:</strong> Dedicated exclusively to Columbus, OH.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Calculator App -->
+            <div class="calc-card pitch-target" data-pitch="High Interaction Lead Capture: Letting users click, calculate, and self-select builds micro-commitments, making them 4x more likely to complete the call.">
+                <div class="calc-header">
+                    <h3>Service Calculator</h3>
+                    <p>Select your issues below for a quick baseline estimate</p>
+                </div>
+                <form id="calc-form" onsubmit="event.preventDefault();">
+                    <div class="calc-group">
+                        <label class="calc-label">Choose Service Type</label>
+                        <div class="service-select-buttons">
+                            <div class="service-btn-item active" onclick="selectCalcService('tuneup')">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span>Heating Tune-Up</span>
+                            </div>
+                            <div class="service-btn-item" onclick="selectCalcService('boiler')">
+                                <i class="fa-solid fa-hot-tub-person"></i>
+                                <span>Boiler Repair</span>
+                            </div>
+                            <div class="service-btn-item" onclick="selectCalcService('leak')">
+                                <i class="fa-solid fa-droplet"></i>
+                                <span>Leak / Piping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive sliders and options based on service -->
+                    <div id="service-options-container">
+                        <!-- Dynamic options loaded via JS -->
+                    </div>
+
+                    <div class="calc-total-box">
+                        <span class="total-label">Estimated Price Range</span>
+                        <h4 id="calc-price-display">$129 - $159</h4>
+                        <p class="calc-disclaimer">*Standard baseline estimate. Final quote provided upon inspection.</p>
+                    </div>
+
+                    <div class="calc-action-block">
+                        <p class="calc-cta-text">Lock in this estimate by speaking directly to the owner now:</p>
+                        <a href="tel:6142538695" class="btn btn-primary btn-calc-call">
+                            <i class="fa-solid fa-phone-flip"></i> Call Owner: (614) 253-8695
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us / Owner Pitch -->
+    <section class="why-us">
+        <div class="why-container">
+            <div class="why-visual">
+                <div class="guarantee-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>100% Satisfaction</h4>
+                    <p>Backed by the Owner</p>
+                </div>
+                <div class="why-card-info">
+                    <h3>"We treat your heating system like it's our own home."</h3>
+                    <p class="owner-quote-name">— Bartholomew Plumbing & Heating Co.</p>
+                </div>
+            </div>
+            
+            <div class="why-content pitch-target" data-pitch="Direct Connection to Local Identity: Underlines their long history in Columbus, counteracting corporate chains that charge huge markups.">
+                <h2>Why Choose Bartholomew?</h2>
+                <p class="why-intro">When your heating system goes out in the middle of a Columbus winter night, you don't want a dispatcher telling you they'll try to find a technician in three days. You need experienced help immediately.</p>
+                
+                <ul class="why-bullets">
+                    <li>
+                        <div class="bullet-icon"><i class="fa-solid fa-reply-all"></i></div>
+                        <div>
+                            <strong>Direct Access to Expertise:</strong> You communicate directly with the owner, not a middleman.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet-icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
+                        <div>
+                            <strong>Old Home & Boiler Experts:</strong> Many Columbus homes have legacy boiler heating systems that franchise plumbers don't know how to service. We specialize in them.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                        <div>
+                            <strong>No Corporate Markup:</strong> No commissions paid to high-pressure salesmen. Just transparent pricing for premium work.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple, High-Converting Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-accent"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                <span class="footer-title">Bartholomew Plumbing & Heating Co.</span>
+                <p>Locally owned and operated in Columbus, OH. Keeping your heating systems and plumbing running smoothly all year round.</p>
+            </div>
+            
+            <div class="footer-contact pitch-target" data-pitch="Final Call to Action: The phone link is repeated in the footer as the absolute final element to catch readers.">
+                <h4>Need Immediate Service?</h4>
+                <a href="tel:6142538695" class="footer-phone-btn">
+                    <i class="fa-solid fa-phone"></i> (614) 253-8695
+                </a>
+                <p class="footer-hours">Available for Emergency Heating & Boiler Calls in Columbus, OH.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bartholomew Plumbing & Heating Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
